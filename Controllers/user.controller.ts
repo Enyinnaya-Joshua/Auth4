@@ -28,7 +28,7 @@ export const RegisterUsers = AsyncHandler(
       next(
         new AppError({
           message: "Account Not created",
-          httpCode: HttpCode.BAD_REQUEST,
+          httpCode: HttpCode.UNAUTHORIZED,
         })
       );
 
